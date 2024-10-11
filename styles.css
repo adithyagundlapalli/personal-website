@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.navbar button,
+.resume button,
+.message-me button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover,
+.resume button:hover,
+.message-me button:hover {
+  background-color: #005bb5;
+}
+
+.socialmedia ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.socialmedia li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.socialmedia li:hover {
+  color: #0073e6;
+}
+
+.aboutme-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.my-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.my-picture img {
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid #0073e6;
+}
+
+.about {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.message-me button {
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .aboutme-section {
+    grid-template-columns: 1fr;
+  }
+
+  .my-picture img {
+    width: 70%;
+  }
+
+  .socialmedia ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialmedia li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar button {
+    font-size: 1rem;
+  }
+
+  .about {
+    font-size: 1.5rem;
+  }
+
+  .my-picture img {
+    width: 60%;
+  }
+
+  .socialmedia ul {
+    padding: 5px;
+  }
+
+  .socialmedia li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .navbar button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .my-picture img {
+    width: 50%;
+  }
+
+  .about {
+    font-size: 1.2rem;
+  }
+
+  .socialmedia ul {
+    padding: 3px;
+  }
+
+  .message-me button {
+    font-size: 0.9rem;
+  }
+}
